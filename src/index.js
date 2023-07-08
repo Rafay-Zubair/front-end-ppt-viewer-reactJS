@@ -15,7 +15,6 @@ const SLIDES = [
   {
       title: "Today's workout plan",
       text: "We're gonna do 3 fundamental exercises.",
-      // image: './me.jpg'
       image: 'https://www.shutterstock.com/image-photo/attractive-african-young-confident-businesswoman-260nw-1712082700.jpg'
   },
   {

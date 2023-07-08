@@ -1,20 +1,17 @@
-import Main from "./Components/Main";
-import Slides from "./Components/Slides";
 import Navigation from "./Components/Navigation";
 import Highlights from "./Components/Highlights";
-import SlidesMain from "./Components/SlidesTemp";
-import TempMain from "./Components/TempMain";
+import Slides from "./Components/Slides";
 import Footer from "./Components/Footer";
-
+import Main from "./Components/Main";
 
 import "./index.css";
-import "./temp.css";
 
 const App = ({slides}) => {
   return (
     <div className="App">
       <Navigation />
-      <SlidesMain />
+      <Slides slides={slides}/>
+      <Main />
     </div>
   );
 };
