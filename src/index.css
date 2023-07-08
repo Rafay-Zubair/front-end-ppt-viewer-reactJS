@@ -1,0 +1,250 @@
+@import '../node_modules/h8k-design/dist/index.css';
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+/* .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../public/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+} */
+
+/* .Form {
+  padding: 1rem 2rem;
+  background-color: #222;
+  text-align: center;
+  border-radius: 5px;
+} */
+
+.parent-main {
+
+}
+
+.child-main {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.Login {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../public/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.Login h1 {
+  color: #ADE3EF;
+  margin-bottom: 2rem;
+  font-family: 'Arima', cursive;
+  text-align:center;
+  font-size: 50px;
+}
+.Login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-right: 5%;
+}
+
+.Login-form h3 {
+  font-family: 'Arima', cursive;
+  color: white;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Login-form input {
+  margin-top: 0;
+  width: 400px;
+  margin: 1rem 0;
+  padding: 0.2rem;
+  background: none;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+  font-family: 'Arima', cursive;
+
+  background-color: #ADE3EF;
+}
+
+
+
+.input-small input {
+  width: 175px;
+
+}
+
+.Login-form button {
+  margin-top: 1.3rem;
+  padding: 0.5rem 0;
+
+  background-image: url(../public/img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: black;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Arima', cursive;
+
+  width: 30%;
+  align-self: center;
+}
+
+.Login-form input:focus {
+  border-bottom: 1px #ddd solid;
+}
+
+.Nav-text {
+  font-family: 'Arima', cursive;
+}
+
+.App-App {
+  /* max-width: 750px; */
+  min-height: 100vh;
+  margin: 0 auto;
+
+  background-image: url(../public/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#navigation {
+  margin-bottom: 2rem;
+}
+
+#navigation button {
+  margin-right: 1rem;
+
+  margin-top: 1.3rem;
+  padding: 0.5rem;
+
+  background-image: url(../public/img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: black;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  font-family: 'Arima', cursive;
+
+  box-shadow: none;
+
+  width: 10%;
+  min-width: 30px;
+  align-self: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  background-color: white;
+  
+
+  min-height: 300px;
+  height: 500px;
+  width: 750px;
+  border: black 3px solid;
+  border-radius: 10px;
+}
+
+.parent h1, p {
+  margin: 0;
+  padding: 1rem;
+
+  color: black;
+}
+
+.parent img {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.float-child {
+  height: 100%;
+  width: 50%;
+  float: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  margin-top: 1.3rem;
+  padding: 0.5rem;
+
+  background-image: url(../public/img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: black;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  font-family: 'Arima', cursive;
+
+  box-shadow: none;
+
+  width: 13%;
+  min-width: 30px;
+  align-self: center;
+
+}
