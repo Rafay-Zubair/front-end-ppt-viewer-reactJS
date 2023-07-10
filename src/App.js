@@ -10,8 +10,7 @@ const App = ({slides}) => {
   return (
     <div className="App">
       <Navigation />
-      <Slides slides={slides}/>
-      <Main />
+      <Main slide={slides}/>
     </div>
   );
 };

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import axios from 'axios';
 import {
   MDBBtn,
@@ -11,7 +13,9 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-function Main() {
+import Slides from './Slides';
+
+function Main({slide}) {
 
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
@@ -35,10 +39,12 @@ function Main() {
   };
 
   const handleGenerateClick = async () => {
-      console.log('Generate clicked!');
-      console.log('Input 1:', input1);
-      console.log('Input 2:', input2);
-      console.log('Input 3:', input3);
+    console.log('Generate clicked!');
+    console.log('Input 1:', input1);
+    console.log('Input 2:', input2);
+    console.log('Input 3:', input3);
+
+    setIsResponseReceived(true);
     // try {
     //   const response = await axios.get('/generate?title=input1&number=input2&author=input3'); 
     //   // const slides = response.data;
@@ -146,11 +152,11 @@ function Main() {
         </MDBCol>
       </MDBRow>
 
-
-      {/* <div>
-        {isResponseReceived && <Slides slides={responseData} />}
-      </div> */}
-
+      {isResponseReceived && <Router>
+        <Switch>
+        <Route path="/" render={(props) => <Slides slides={slide} />} />
+        </Switch>
+      </Router>}
     </MDBContainer>
   );
 }
