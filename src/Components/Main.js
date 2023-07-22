@@ -39,29 +39,23 @@ function Main({slide}) {
   };
 
   const handleGenerateClick = async () => {
-    console.log('Generate clicked!');
-    console.log('Input 1:', input1);
-    console.log('Input 2:', input2);
-    console.log('Input 3:', input3);
-
-    setIsResponseReceived(true);
-    // try {
-    //   const response = await axios.get('/generate?title=input1&number=input2&author=input3'); 
-    //   // const slides = response.data;
-    //   setResponseData(response.data);
-    //   setIsResponseReceived(true);
-
-    //   // Handling the images part is left for now...
-
-    // } catch (error) {
-    //   console.error('Error fetching images:', error);
-    // }
+    try {
+      const response = await axios.post('http://127.0.0.1:5000/generate', {
+        topic: input1,
+        total_slides: input2.toString(),
+        author: input3,
+      });
+      setResponseData(response.data);
+      setIsResponseReceived(true);
+      
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
   };
 
   useEffect(() => {
     consoleText(['History', 'Technology', 'Culture', 'Geography','Literature'], 'text');
   }, []);
-
 
   function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['hsl(218, 81%, 75%)'];
@@ -154,7 +148,7 @@ function Main({slide}) {
 
       {isResponseReceived && <Router>
         <Switch>
-        <Route path="/" render={(props) => <Slides slides={slide} />} />
+        <Route path="/" render={(props) => <Slides slides={responseData} />} />
         </Switch>
       </Router>}
     </MDBContainer>

@@ -1,6 +1,4 @@
 import Navigation from "./Components/Navigation";
-import Highlights from "./Components/Highlights";
-import Slides from "./Components/Slides";
 import Footer from "./Components/Footer";
 import Main from "./Components/Main";
 

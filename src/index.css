@@ -26,11 +26,6 @@
   margin-top: 1.5rem;
   padding: 0.5rem;
 
-  /* background-image: url(../public/img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-
   background-color: #386bc0;
 
   color: white;
@@ -69,16 +64,22 @@
   
   border: black 3px solid;
   border-radius: 10px;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .parent h1, p {
   margin: 0;
   padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 
   color: black;
 }
 
-.parent img {
+/* .parent img {
   margin: 0;
   padding: 0;
 
@@ -87,9 +88,9 @@
 
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-}
+} */
 
-.float-child {
+/* .float-child {
   height: 100%;
   width: 50%;
   float: left;
@@ -97,7 +98,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .btn-generate {
   margin-right: 1rem;

@@ -33,13 +33,13 @@ function Slides({slides}) {
                   <div id="slide" className="parent">
                       <div className='float-child'>
                           <div>
-                            <h1 data-testid="title">{slides[currentSlide].title}</h1>
-                            <p data-testid="text">{slides[currentSlide].text}</p>
+                            <h1 data-testid="title">{slides[currentSlide].Heading}</h1>
+                            <p data-testid="text">{slides[currentSlide].Content}</p>
                           </div>
                       </div>
-                      <div className='float-child'>
+                      {/* <div className='float-child'>
                         <img src={slides[currentSlide].image} alt="Image" />
-                      </div>
+                      </div> */}
                   </div>
               </div>
 

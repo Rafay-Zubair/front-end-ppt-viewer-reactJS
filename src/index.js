@@ -13,25 +13,25 @@ import {applyPolyfills, defineCustomElements} from 'h8k-components/loader';
 
 const SLIDES = [
   {
-      title: "Today's workout plan",
-      text: "We're gonna do 3 fundamental exercises.",
+    Heading: "Today's workout plan",
+    Content: "We're gonna do 3 fundamental exercises.",
       image: 'https://www.shutterstock.com/image-photo/attractive-african-young-confident-businesswoman-260nw-1712082700.jpg'
   },
   {
-      title: "First, 10 push-ups",
-      text: "Do 10 reps. Remember about full range of motion. Don't rush."
+    Heading: "First, 10 push-ups",
+    Content: "Do 10 reps. Remember about full range of motion. Don't rush."
   },
   {
-      title: "Next, 20 squats",
-      text: "Squats are important. Remember to keep your back straight."
+    Heading: "Next, 20 squats",
+    Content: "Squats are important. Remember to keep your back straight."
   },
   {
-      title: "Finally, 15 sit-ups",
-      text: "Slightly bend your knees. Remember about full range of motion."
+    Heading: "Finally, 15 sit-ups",
+    Content: "Slightly bend your knees. Remember about full range of motion."
   },
   {
-      title: "Great job!",
-      text: "You made it, have a nice day and see you next time!"
+    Heading: "Great job!",
+    Content: "You made it, have a nice day and see you next time!"
   }
 ];
 
