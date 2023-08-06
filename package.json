@@ -1,6 +1,7 @@
 {
-  "name": "ai-ppt-gen-2",
+  "name": "ai-slide-wizard",
   "version": "0.1.0",
+  "homepage": "https://Rafay-Zubair.github.io/AI-Slide-Wizard",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
