@@ -15,7 +15,7 @@ const SLIDES = [
   {
     Heading: "Today's workout plan",
     Content: "We're gonna do 3 fundamental exercises.",
-      image: 'https://www.shutterstock.com/image-photo/attractive-african-young-confident-businesswoman-260nw-1712082700.jpg'
+    Image: 'https://www.shutterstock.com/image-photo/attractive-african-young-confident-businesswoman-260nw-1712082700.jpg'
   },
   {
     Heading: "First, 10 push-ups",

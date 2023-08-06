@@ -9,20 +9,33 @@ import {
   MDBCol,
   MDBCard,
   MDBCardBody,
-  MDBInput
+  MDBInput,
+  MDBSpinner
 }
 from 'mdb-react-ui-kit';
 
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+
 import Slides from './Slides';
+import SlidesWOI from './SlidesWOI';
+import { flushSync } from 'react-dom';
 
 function Main({slide}) {
 
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
   const [input3, setInput3] = useState('');
+  const [input4, setInput4] = useState(true);
+
+  const handleChoice = (event, newChoice) => {
+    setInput4(newChoice);
+  }
 
   const [responseData, setResponseData] = useState(null);  
   const [isResponseReceived, setIsResponseReceived] = useState(false);
+  const [isResponseReceivedwithoutImage, setIsResponseReceivedwithoutImage] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInput1Change = (e) => {
     setInput1(e.target.value);
@@ -40,15 +53,23 @@ function Main({slide}) {
 
   const handleGenerateClick = async () => {
     try {
+      setIsLoading(true)
       const response = await axios.post('http://127.0.0.1:5000/generate', {
         topic: input1,
         total_slides: input2.toString(),
         author: input3,
+        withimage: input4
       });
       setResponseData(response.data);
-      setIsResponseReceived(true);
+      setIsLoading(false)
+      if (input4 === true) {
+        setIsResponseReceived(true);
+      } else {
+        setIsResponseReceivedwithoutImage(true);
+      }
       
     } catch (error) {
+      setIsLoading(false)
       console.error('Error fetching data:', error);
     }
   };
@@ -134,10 +155,30 @@ function Main({slide}) {
                 <MDBCol col='6'>
                   <MDBInput wrapperClass='mb-4' required value={input3} onChange={handleInput3Change} label='Author' id='input3' type='text'/>
                 </MDBCol>
+                <MDBRow style={{marginBottom:'10px', paddingLeft:'20%'}}>
+                  <MDBCol md='2'></MDBCol>
+                  <MDBCol md='8'>
+                    <ToggleButtonGroup
+                      color='primary'
+                      value={input4}
+                      exclusive
+                      onChange={handleChoice}
+                    >
+                      <ToggleButton value={true} className='toggler-set'>
+                        Image
+                      </ToggleButton>
+                      <ToggleButton value={false} className='toggler-set'>
+                        No Image
+                      </ToggleButton>
+                    </ToggleButtonGroup>
+                  </MDBCol>
+                  <MDBCol md='2'></MDBCol>
+                </MDBRow>
               </MDBRow>
               <MDBRow className='d-flex justify-content-center'>
                 {/* <MDBBtn className='w-40 mb-4 toggler-set' size='md' onClick={handleGenerateClick}>Generate</MDBBtn> */}
-                <button data-testid="button-generate" className='w-40 btn-generate' onClick={handleGenerateClick}>
+                <button data-testid="button-generate" className='w-40 btn-generate' onClick={handleGenerateClick} disabled={isLoading}>
+                  {isLoading && <MDBSpinner size='sm' role='status' tag='span' className='me-2' />}
                   Generate
                 </button>
               </MDBRow>
@@ -151,6 +192,13 @@ function Main({slide}) {
         <Route path="/" render={(props) => <Slides slides={responseData} />} />
         </Switch>
       </Router>}
+
+      {isResponseReceivedwithoutImage && <Router>
+        <Switch>
+        <Route path="/" render={(props) => <SlidesWOI slides={responseData} />} />
+        </Switch>
+      </Router>}      
+
     </MDBContainer>
   );
 }

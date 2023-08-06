@@ -10,16 +10,23 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-function Slides({slides}) {
+function SlidesWOI({slides}) {
+
+  const list_bg = ['bg1', 'bg2', 'bg3']
 
   const [currentSlide, setSlide] = useState(0);
+  const [currentBg, setBg] = useState(0);
+
+  const next_bg = () => {
+    setBg((currentBg + 1) % list_bg.length)
+  }
 
   const download_slides = () => {
     axios({
       url: 'http://127.0.0.1:5000/download',
       method: 'POST',
-      responseType: 'blob' // Important: Set the response type to 'blob'
-      // data: {template_no: currentBg + 1}
+      responseType: 'blob', // Important: Set the response type to 'blob'
+      data: {template_no: currentBg + 1}
     }).then((response) => {
       // Create a URL object from the response data
       const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -41,16 +48,11 @@ function Slides({slides}) {
           <MDBCard className='my-5 bg-glass'>
             <MDBCardBody className='p-5'>
               <div className='main'>
-                  <div id="slide" className='parent'>
-                      <div className='float-child'>
-                          <div>
-                            <h1 data-testid="title">{slides[currentSlide].Heading}</h1>
-                            <p data-testid="text">{slides[currentSlide].Content}</p>
-                          </div>
-                      </div>
-                      <div className='float-child'>
-                        <img src={slides[currentSlide].Image} alt="Image" />
-                      </div>
+                  <div id="slide" className={list_bg[currentBg]}>
+                    <div>
+                      <h1 data-testid="title">{slides[currentSlide].Heading}</h1>
+                      <p data-testid="text">{slides[currentSlide].Content}</p>
+                    </div>
                   </div>
               </div>
 
@@ -78,13 +80,26 @@ function Slides({slides}) {
                   >
                       Download
                   </button>
+                  <button
+                      onClick={next_bg}
+                      data-testid="button-n"
+                  >
+                      Theme
+                  </button>
               </div>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
       </MDBRow>
+
+
+      {/* {isResponseReceived && <Router>
+        <Switch>
+        <Route path="/" render={(props) => <Main slide={null} />} />
+        </Switch>
+      </Router>} */}
     </MDBContainer>
   );
 }
 
-export default Slides;
+export default SlidesWOI;

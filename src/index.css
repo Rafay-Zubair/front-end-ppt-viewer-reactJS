@@ -56,8 +56,8 @@
   align-items: center;
 }
 
-/* .parent {
-  background-color: black;
+.parent {
+  background-color: white;
 
   height: 60vh;
   width: 750px;
@@ -86,7 +86,7 @@
   padding-right: 2.5rem;
 
   color: black;
-} */
+}
 
 /* For Background 1 */
 .bg1 {
@@ -201,7 +201,7 @@
   color: white;
 }
 
-/* .parent img {
+.parent img {
   margin: 0;
   padding: 0;
 
@@ -210,9 +210,9 @@
 
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
-} */
+}
 
-/* .float-child {
+.float-child {
   height: 100%;
   width: 50%;
   float: left;
@@ -220,18 +220,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .btn-generate {
   margin-right: 1rem;
 
   margin-top: 1.5rem;
   padding: 0.5rem;
-
-  /* background-image: url(../public/img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 
   background-color: #386bc0;
 
@@ -296,6 +291,16 @@ align-items: center;
   overflow: hidden;
 }
 
+#radius-shape-3 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: 45px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
 .bg-glass {
   background-color: hsla(0, 0%, 100%, 0.9) !important;
   backdrop-filter: saturate(200%) blur(25px);
@@ -337,4 +342,29 @@ box-shadow: none;
 
 .toggler-set:hover {
 box-shadow: none;
+}
+
+/* For Loading Screen */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
 }
