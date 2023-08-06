@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/AI-Slide-Wizard/static/css/main.91b50695.css",
+    "main.js": "/AI-Slide-Wizard/static/js/main.ecf008e8.js",
+    "stencil-polyfills-css-shim.js": "/AI-Slide-Wizard/static/js/stencil-polyfills-css-shim.2c251a82.chunk.js",
+    "stencil-polyfills-dom.js": "/AI-Slide-Wizard/static/js/stencil-polyfills-dom.2d78d6ee.chunk.js",
+    "stencil-h8k-logo_2-entry-js.js": "/AI-Slide-Wizard/static/js/stencil-h8k-logo_2-entry-js.0fe37d7a.chunk.js",
+    "static/js/787.d8d1e874.chunk.js": "/AI-Slide-Wizard/static/js/787.d8d1e874.chunk.js",
+    "static/media/bg2.jpg": "/AI-Slide-Wizard/static/media/bg2.e0a5f59dfcaa83ed3259.jpg",
+    "static/media/bg3.jpg": "/AI-Slide-Wizard/static/media/bg3.e8b72be617b21a65a6cc.jpg",
+    "static/media/bg1.jpg": "/AI-Slide-Wizard/static/media/bg1.fda6ee9c8943e70a3db3.jpg",
+    "index.html": "/AI-Slide-Wizard/index.html",
+    "main.91b50695.css.map": "/AI-Slide-Wizard/static/css/main.91b50695.css.map",
+    "main.ecf008e8.js.map": "/AI-Slide-Wizard/static/js/main.ecf008e8.js.map",
+    "stencil-polyfills-css-shim.2c251a82.chunk.js.map": "/AI-Slide-Wizard/static/js/stencil-polyfills-css-shim.2c251a82.chunk.js.map",
+    "stencil-polyfills-dom.2d78d6ee.chunk.js.map": "/AI-Slide-Wizard/static/js/stencil-polyfills-dom.2d78d6ee.chunk.js.map",
+    "stencil-h8k-logo_2-entry-js.0fe37d7a.chunk.js.map": "/AI-Slide-Wizard/static/js/stencil-h8k-logo_2-entry-js.0fe37d7a.chunk.js.map",
+    "787.d8d1e874.chunk.js.map": "/AI-Slide-Wizard/static/js/787.d8d1e874.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91b50695.css",
+    "static/js/main.ecf008e8.js"
+  ]
+}
