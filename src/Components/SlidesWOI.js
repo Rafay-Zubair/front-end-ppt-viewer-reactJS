@@ -98,6 +98,10 @@ function SlidesWOI({slides}) {
         <Route path="/" render={(props) => <Main slide={null} />} />
         </Switch>
       </Router>} */}
+
+
+      {<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6328495234053928"
+      crossorigin="anonymous"></script>}
     </MDBContainer>
   );
 }
