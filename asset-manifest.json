@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/AI-Slide-Wizard/static/css/main.91b50695.css",
-    "main.js": "/AI-Slide-Wizard/static/js/main.ecf008e8.js",
+    "main.css": "/AI-Slide-Wizard/static/css/main.bc03b7ed.css",
+    "main.js": "/AI-Slide-Wizard/static/js/main.67c74d40.js",
     "stencil-polyfills-css-shim.js": "/AI-Slide-Wizard/static/js/stencil-polyfills-css-shim.2c251a82.chunk.js",
     "stencil-polyfills-dom.js": "/AI-Slide-Wizard/static/js/stencil-polyfills-dom.2d78d6ee.chunk.js",
     "stencil-h8k-logo_2-entry-js.js": "/AI-Slide-Wizard/static/js/stencil-h8k-logo_2-entry-js.0fe37d7a.chunk.js",
     "static/js/787.d8d1e874.chunk.js": "/AI-Slide-Wizard/static/js/787.d8d1e874.chunk.js",
+    "static/media/bg5.jpg": "/AI-Slide-Wizard/static/media/bg5.c6c7a965ce67eb07bdab.jpg",
     "static/media/bg2.jpg": "/AI-Slide-Wizard/static/media/bg2.e0a5f59dfcaa83ed3259.jpg",
+    "static/media/bg6.jpg": "/AI-Slide-Wizard/static/media/bg6.4e46d281ef806e098332.jpg",
     "static/media/bg3.jpg": "/AI-Slide-Wizard/static/media/bg3.e8b72be617b21a65a6cc.jpg",
+    "static/media/bg4.jpg": "/AI-Slide-Wizard/static/media/bg4.503bf635ceb4005530b8.jpg",
     "static/media/bg1.jpg": "/AI-Slide-Wizard/static/media/bg1.fda6ee9c8943e70a3db3.jpg",
     "index.html": "/AI-Slide-Wizard/index.html",
-    "main.91b50695.css.map": "/AI-Slide-Wizard/static/css/main.91b50695.css.map",
-    "main.ecf008e8.js.map": "/AI-Slide-Wizard/static/js/main.ecf008e8.js.map",
+    "main.bc03b7ed.css.map": "/AI-Slide-Wizard/static/css/main.bc03b7ed.css.map",
+    "main.67c74d40.js.map": "/AI-Slide-Wizard/static/js/main.67c74d40.js.map",
     "stencil-polyfills-css-shim.2c251a82.chunk.js.map": "/AI-Slide-Wizard/static/js/stencil-polyfills-css-shim.2c251a82.chunk.js.map",
     "stencil-polyfills-dom.2d78d6ee.chunk.js.map": "/AI-Slide-Wizard/static/js/stencil-polyfills-dom.2d78d6ee.chunk.js.map",
     "stencil-h8k-logo_2-entry-js.0fe37d7a.chunk.js.map": "/AI-Slide-Wizard/static/js/stencil-h8k-logo_2-entry-js.0fe37d7a.chunk.js.map",
     "787.d8d1e874.chunk.js.map": "/AI-Slide-Wizard/static/js/787.d8d1e874.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91b50695.css",
-    "static/js/main.ecf008e8.js"
+    "static/css/main.bc03b7ed.css",
+    "static/js/main.67c74d40.js"
   ]
 }
