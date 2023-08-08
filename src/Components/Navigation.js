@@ -20,7 +20,7 @@ export default function App() {
     <>
       <MDBNavbar sticky expand='lg' dark className='bg-set'>
         <MDBContainer fluid>
-          <MDBNavbarBrand href='/' className='ml-50 fw-bold'>AI-SlideWizard</MDBNavbarBrand>
+          <MDBNavbarBrand href='./' className='ml-50 fw-bold'>AI-SlideWizard</MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
             data-target='#navbarToggleExternalContent'
@@ -35,10 +35,10 @@ export default function App() {
           <MDBCollapse show={showNavColor} navbar>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
-                <MDBNavbarLink href='/'>Features</MDBNavbarLink>
+                <MDBNavbarLink href='./'>Features</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='/'>About</MDBNavbarLink>
+                <MDBNavbarLink href='./'>About</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

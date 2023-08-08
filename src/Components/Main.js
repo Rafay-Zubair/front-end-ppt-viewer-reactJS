@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import axios from 'axios';
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -14,12 +13,10 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Checkbox from '@mui/material/Checkbox';
 
 import Slides from './Slides';
 import SlidesWOI from './SlidesWOI';
-import { flushSync } from 'react-dom';
 
 function Main({slide}) {
 
@@ -28,8 +25,12 @@ function Main({slide}) {
   const [input3, setInput3] = useState('');
   const [input4, setInput4] = useState(true);
 
-  const handleChoice = (event, newChoice) => {
-    setInput4(newChoice);
+  const handleChoice = () => {
+    if (input4) {
+      setInput4(false)
+    } else {
+      setInput4(true)
+    }
   }
 
   const [responseData, setResponseData] = useState(null);  
@@ -62,7 +63,7 @@ function Main({slide}) {
       });
       setResponseData(response.data);
       setIsLoading(false)
-      if (input4 === true) {
+      if (input4) {
         setIsResponseReceived(true);
       } else {
         setIsResponseReceivedwithoutImage(true);
@@ -155,24 +156,17 @@ function Main({slide}) {
                 <MDBCol col='6'>
                   <MDBInput wrapperClass='mb-4' required value={input3} onChange={handleInput3Change} label='Author' id='input3' type='text'/>
                 </MDBCol>
-                <MDBRow style={{marginBottom:'10px', paddingLeft:'20%'}}>
-                  <MDBCol md='2'></MDBCol>
-                  <MDBCol md='8'>
-                    <ToggleButtonGroup
-                      color='primary'
-                      value={input4}
-                      exclusive
-                      onChange={handleChoice}
-                    >
-                      <ToggleButton value={true} className='toggler-set'>
-                        Image
-                      </ToggleButton>
-                      <ToggleButton value={false} className='toggler-set'>
-                        No Image
-                      </ToggleButton>
-                    </ToggleButtonGroup>
+                <MDBRow style={{marginBottom:'10px'}}>
+                  <MDBCol md='6'>Add Images</MDBCol>
+                  <MDBCol md='6'>
+                    <Checkbox
+                      required
+                      checked={input4}
+                      onClick={handleChoice}
+                      inputProps={{ 'aria-label': 'controlled' }}
+                    />
                   </MDBCol>
-                  <MDBCol md='2'></MDBCol>
+                  <MDBCol md='0'></MDBCol>
                 </MDBRow>
               </MDBRow>
               <MDBRow className='d-flex justify-content-center'>
