@@ -12,7 +12,7 @@ from 'mdb-react-ui-kit';
 
 function SlidesWOI({slides}) {
 
-  const list_bg = ['bg1', 'bg2', 'bg3']
+  const list_bg = ['bg1', 'bg2', 'bg3', 'bg4', 'bg5', 'bg6']
 
   const [currentSlide, setSlide] = useState(0);
   const [currentBg, setBg] = useState(0);

@@ -201,6 +201,123 @@
   color: white;
 }
 
+/* For Background 4 */
+.bg4 {
+  background-color: white;
+
+  height: 60vh;
+  width: 750px;
+  
+  background-image: url(../public/bg4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: black 3px solid;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg4 h1 {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  color: rgb(66, 158, 157);
+}
+
+.bg4 p {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  color: black;
+}
+
+/* For Background 5 */
+.bg5 {
+  background-color: white;
+
+  height: 60vh;
+  width: 750px;
+  
+  background-image: url(../public/bg5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: black 3px solid;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg5 h1 {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  color: rgb(128,128,128);
+}
+
+.bg5 p {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  color: black;
+}
+
+/* For Background 6 */
+.bg6 {
+  background-color: white;
+
+  height: 60vh;
+  width: 750px;
+  
+  background-image: url(../public/bg6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: black 3px solid;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg6 h1 {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 5rem;
+
+  color: rgb(234,26,85);
+}
+
+.bg6 p {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 5rem;
+
+  color: white;
+}
+
 .parent img {
   margin: 0;
   padding: 0;
