@@ -40,6 +40,15 @@ export default function App() {
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
+          <MDBNavbarBrand href='http://isb.nu.edu.pk/aim/'>
+            <img
+              src='./aim_lab.jpeg'
+              height='55'
+              width='200'
+              alt=''
+              loading='lazy'
+            />
+          </MDBNavbarBrand>
         </MDBContainer>
       </MDBNavbar>
     </>
