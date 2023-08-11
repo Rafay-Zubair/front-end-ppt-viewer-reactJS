@@ -15,6 +15,14 @@ function Features() {
             <MDBContainer fluid className='p-4 background-radial-gradient-2 overflow-hidden'>
                 <div style={{margin:'30px'}}></div>
                 <MDBRow>
+                    <MDBCol md='12' className='text-center text-md-start d-flex flex-column justify-content-center'>
+                        <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{color: 'hsl(218, 81%, 95%)', textAlign:'center'}}>
+                            <br />
+                            <span style={{color: 'hsl(218, 81%, 75%)'}}>FEATURES</span>
+                        </h1>
+                    </MDBCol>
+                </MDBRow>
+                <MDBRow>
                     <MDBCol md='6' className='text-center text-md-start d-flex flex-column justify-content-center'>
                         <h1 className="my-5 display-3 fw-bold ls-tight px-3" style={{color: 'hsl(218, 81%, 95%)', textAlign:'center'}}>
                             TEXT <br />
