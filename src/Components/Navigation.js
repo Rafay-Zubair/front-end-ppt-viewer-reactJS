@@ -34,12 +34,12 @@ export default function App() {
           </MDBNavbarToggler>
           <MDBCollapse show={showNavColor} navbar>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
-              <MDBNavbarItem>
+              {/* <MDBNavbarItem>
                 <MDBNavbarLink href='./'>Features</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink href='./'>About</MDBNavbarLink>
-              </MDBNavbarItem>
+              </MDBNavbarItem> */}
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
