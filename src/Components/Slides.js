@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -49,7 +48,7 @@ function Slides({slides}) {
                           </div>
                       </div>
                       <div className='float-child'>
-                        <img src={slides[currentSlide].Image} alt="Image" />
+                        <img src={slides[currentSlide].Image} alt="ppt" />
                       </div>
                   </div>
               </div>
@@ -83,10 +82,6 @@ function Slides({slides}) {
           </MDBCard>
         </MDBCol>
       </MDBRow>
-
-
-      {<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6328495234053928"
-     crossorigin="anonymous"></script>}
     </MDBContainer>
   );
 }

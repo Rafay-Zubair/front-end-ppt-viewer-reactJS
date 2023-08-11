@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -91,17 +90,6 @@ function SlidesWOI({slides}) {
           </MDBCard>
         </MDBCol>
       </MDBRow>
-
-
-      {/* {isResponseReceived && <Router>
-        <Switch>
-        <Route path="/" render={(props) => <Main slide={null} />} />
-        </Switch>
-      </Router>} */}
-
-
-      {<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6328495234053928"
-      crossorigin="anonymous"></script>}
     </MDBContainer>
   );
 }

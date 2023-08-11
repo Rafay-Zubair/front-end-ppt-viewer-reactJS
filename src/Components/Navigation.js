@@ -13,8 +13,6 @@ import {
 
 export default function App() {
   const [showNavColor, setShowNavColor] = useState(false);
-  const [showNavColorSecond, setShowNavColorSecond] = useState(false);
-  const [showNavColorThird, setShowNavColorThird] = useState(false);
 
   return (
     <>
@@ -34,12 +32,12 @@ export default function App() {
           </MDBNavbarToggler>
           <MDBCollapse show={showNavColor} navbar>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
-              {/* <MDBNavbarItem>
-                <MDBNavbarLink href='./'>Features</MDBNavbarLink>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='./#Features'>Features</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='./'>About</MDBNavbarLink>
-              </MDBNavbarItem> */}
+                <MDBNavbarLink href='./#About'>About</MDBNavbarLink>
+              </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>

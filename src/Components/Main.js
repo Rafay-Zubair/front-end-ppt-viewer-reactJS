@@ -192,10 +192,6 @@ function Main({slide}) {
         <Route path="/" render={(props) => <SlidesWOI slides={responseData} />} />
         </Switch>
       </Router>}      
-
-
-      {<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6328495234053928"
-     crossorigin="anonymous"></script>}
     </MDBContainer>
   );
 }
