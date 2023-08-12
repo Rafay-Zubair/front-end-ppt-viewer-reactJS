@@ -42,7 +42,7 @@ export default function App() {
           </MDBCollapse>
           <MDBNavbarBrand href='http://isb.nu.edu.pk/aim/'>
             <img
-              src='./aim_lab.jpeg'
+              src='./aim_lab_2.jpeg'
               height='55'
               width='200'
               alt=''
