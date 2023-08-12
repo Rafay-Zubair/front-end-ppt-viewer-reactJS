@@ -11,7 +11,7 @@ const App = ({slides}) => {
       <Navigation />
       <Main slide={slides}/>
       <Features />
-      <About />
+      {/* <About /> */}
     </div>
   );
 };
